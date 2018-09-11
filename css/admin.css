@@ -1,0 +1,22 @@
+@charset "gb18030";
+/* CSS Document */
+body{
+	background:url(img/logback.jpg);
+}
+.footer p{
+		font-size: 10px;
+		font-family: '黑体'; 
+		color: white;
+		text-align: center;
+		height:20px ;
+	}
+	
+	.box{
+		text-align:center;
+	    padding-bottom:20px;
+	}	
+	h1{
+		font-family:"华文仿宋", "华文宋体", "华文中宋", "仿宋", "新宋体", "宋体";
+		font-size:30px;
+		padding-top:150px;
+		padding-bottom:20px;}

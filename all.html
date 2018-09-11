@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="gb18030">
+<title>全部车型</title>
+<style>
+*{
+				margin:0px;
+				padding:0px;}
+a{
+				text-decoration: none;}
+				bb{
+				color:white;
+				}
+	.enter ul li{
+				float: right;
+				padding: 5px 10px;
+				padding-right: 20px;
+				color: white;
+			}
+			.enter ul li a{
+				color: #fff;
+				font-size: 18px;
+				font-family:"仿宋";
+				line-height: 50px;
+				display: block;
+				text-align: center;
+			}
+			.enter a:hover{
+				color: gainsboro;
+			}
+body{
+	background:black;
+}
+	li{
+				list-style: none;
+			}
+.nav{
+				width:800px;
+				overflow: hidden;							
+			}
+			.nav ul li{
+				float:left;
+				margin-left: 1px;
+				padding: 5px 10px;
+
+			}
+			.nav ul li a{
+				color: #fff;
+				font-size: 25px;
+				font-family:"仿宋";
+				line-height: 50px;
+
+			}
+			.nav a:hover{
+				color: gray;
+			}
+			.nav ul ul{
+				display: none;
+			}
+			.nav li li{
+				float: none;
+			}
+			.nav ul li:hover ul{
+				display: block;
+				position: absolute;				
+			}
+.poster-main a,.poster-main img{display:block;}
+.poster-main .poster-list{
+	width:600px;
+	height:370px;
+	}
+.poster-main .poster-list .poster-item{ 
+	position:absolute;
+	left:0;
+    top:0;
+	width:1000px;
+	margin-left:340px;
+	padding-top:100px;}
+.poster-main .poster-btn{ 
+	position:absolute;
+	top:0;
+	width:100px;
+	height:270px; 
+	z-index:10; 
+	cursor:pointer; 
+	 opacity:0.8}
+.poster-main .poster-prev-btn{
+	left:0;
+	position:absolute;
+	margin-top:250px ;
+	margin-left:340px}
+.poster-main .poster-next-btn{
+	right:0;
+	position:absolute;
+	margin-top:250px ;
+	margin-right:420px ;}
+	.box{
+		padding-top:100px;
+		padding-left:150px;}
+		.box tr td{
+			overflow:hidden}
+			.box tr td img{
+				cursor:pointer;
+				transition:all 0.6s;}
+				.box tr td img:hover{
+					transform:scale(1.05,1.05);}
+</style>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/carousel.js"></script>
+     <link rel="stylesheet" type="text/css" href="css/banquan.css" />
+</head>
+
+<body>
+<div class="enter">
+			<ul>
+        	<li><a href="register.html">注册</a></li>
+        <li><a href="login.jsp">你还没有登录，请先登录</a></li>
+        <li><a href="adminlogin.jsp">管理员登录</a></li>
+       </li>
+         </ul>
+		</div>
+<div class="nav">
+			<ul>
+				<li><a href="index.jsp">首页</a></li>
+				<li><a href="all.html">全部车型</a></li>	
+                <li><a href="#">售后服务</a></li>	
+				<li><a href="#">新闻中心</a>
+					<ul>
+						<li><a href="#">每日热点</a></li>
+						<li><a href="#">行业资讯</a></li>
+						<li><a href="#">最新动态</a></li>						
+					</ul>
+				</li>										
+				<li><a href="#">关于我们</a></li>			
+			</ul>
+		</div>
+<div class="J_Poster poster-main" style="text-align: center;" data-setting='{
+         "width":600,
+         "height":370,
+         "posterWidth":600,
+         "posterHeight":370,
+         "scale":0.8,
+         "autoPlay":true,
+         "delay":2000,
+         "speed":300}'>
+	<div class="poster-btn poster-prev-btn"><img src="img/btn_l.png"/></div>
+    <ul class="poster-list">
+    	<li class="poster-item"><a href="#"><img src="img/1.jpg" width="100%" height="100%"></a></li>
+        <li class="poster-item"><a href="#"><img src="img/2.jpg" width="100%" height="100%"></a></li>
+        <li class="poster-item"><a href="#"><img src="img/3.jpg" width="100%" height="100%"></a></li>
+        <li class="poster-item"><a href="#"><img src="img/4.jpg" width="100%" height="100%"></a></li>
+        <li class="poster-item"><a href="#"><img src="img/5.jpg" width="100%" height="100%"></a></li>
+        <li class="poster-item"><a href="#"><img src="img/2.jpg" width="100%" height="100%"></a></li>
+        <li class="poster-item"><a href="#"><img src="img/3.jpg" width="100%" height="100%"></a></li>
+        <li class="poster-item"><a href="#"><img src="img/4.jpg" width="100%" height="100%"></a></li>
+        <li class="poster-item"><a href="#"><img src="img/5.jpg" width="100%" height="100%"></a></li>
+    </ul>
+    <div class="poster-btn poster-next-btn"><img src="img/btn_r.png"/></div>
+</div>	
+<div style="width: auto;border: 0.5px solid whitesmoke; margin-top: 28px;"></div>
+<div class="box">
+ <table width="1000" align="center">
+  <tr>
+    <td width="240" align="center"><a href="#"><img src="img/all/1.jpg" width="220" height="180" alt="" /></td>
+    <td width="240" align="center"><a href="#"><img src="img/all/2.jpg" width="220" height="180" alt=""/></td>
+    <td width="240" align="center"><a href="#"><img src="img/all/3.jpg" width="220" height="180" alt=""/></td>
+    <td width="240" align="center"><a href="#"><img src="img/all/7.jpg" width="220" height="180" alt=""/></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="#"><img src="img/all/5.jpg" width="220" height="180" alt=""/></td>
+    <td align="center"><a href="#"><img src="img/all/6.jpg" width="220" height="180" alt=""/></td>
+    <td align="center"><a href="#"><img src="img/all/4.jpg" width="220" height="180" alt=""/></td>
+    <td align="center"><a href="#"><img src="img/all/8.jpg" width="220" height="180" alt=""/></td>
+  </tr>
+</table>
+</div>
+<div style="width: auto;border: 0.5px solid whitesmoke; margin-top: 28px;"></div>	
+	<div class="footer">
+		    <p></p>
+			<p >版权信息</p>
+			<p >Copyright © 2018 Adobe Systems Incorporated. All rights reserved.</p>
+	  </div>
+</body>
+<script>
+
+$(function(){
+	Carousel.init($(".J_Poster"));
+});
+</script>
+</html>

@@ -1,0 +1,9 @@
+@charset "gb18030";
+/* CSS Document */
+.footer p{
+		font-size: 10px;
+		font-family: 'ºÚÌå'; 
+		color: white;
+		text-align: center;
+		height:20px ;
+	}

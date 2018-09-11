@@ -1,0 +1,121 @@
+﻿<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>用户注册</title>
+    <script type="text/javascript">
+    <!--
+      function check()
+      {
+        if ( document.getElementById("username").value == "" )
+        {
+          alert("用户名不能为空！");
+          return false;
+        }
+        if ( document.getElementById("password1").value == "" )
+        {
+          alert("密码不能为空！");
+          return false;
+        }
+        if ( document.getElementById("password2").value == "" )
+        {
+          alert("确认密码不能为空！");
+          return false;
+        }
+        if ( document.getElementById("password1").value != document.getElementById("password2").value )
+        {
+          alert("两次密码输入不一致！请重新输入。");
+          return false;
+        }
+        if ( document.getElementById("answer").value == "" )
+        {
+          alert("找回密码的答案不能为空！");
+          return false;
+        }
+      }
+    //-->
+    </script>
+    <style>
+body{
+	background: url(img/logback.jpg);
+}
+.box{
+	text-align:center;
+	padding-bottom:200px;}
+	h1{
+		font-size:30px;
+		font-family:"华文仿宋", "华文宋体", "华文中宋", "仿宋", "新宋体", "宋体";
+		text-align:center;
+		padding-top:100px;
+		padding-bottom:30px;
+		}
+		.p1{
+			text-align:center;
+			color:white;
+			font-family:"华文仿宋", "华文宋体", "华文中宋", "仿宋", "新宋体", "宋体";
+			font-size:16px;}
+			h2{
+				color:white;
+		font-size:25px;
+		font-family:"华文仿宋", "华文宋体", "华文中宋", "仿宋", "新宋体", "宋体";
+		text-align:center;
+		}
+		#submit{
+			color:white;
+	background: url(/img/search.jpg) no-repeat fixed center;}
+	#reset{
+		color:white;
+	background: url(/img/search.jpg) no-repeat fixed center;}
+</style>
+ <link rel="stylesheet" type="text/css" href="css/banquan.css" />
+  </head>
+  <body>
+    <h1>用户注册</h1>
+    <p class="p1">亲爱的用户，欢饮您注册本站</p>
+    <p class="p1">您只要填完以下信息，即可完成注册，非常简单。</p>
+    <h2>请输入注册信息</h2>
+    <div class="box">
+    <form action="reg.jsp" method="post" name="form1" id="form1" onSubmit="return check()">
+      <p>
+        <label for="username" style="color:white">用　　户　　名：</label>
+        <input type="text" name="username" id="username">
+      </p>
+      <p>
+        <label for="password1" style="color:white">密　　　　　码：</label>
+        <input type="password" name="password1" id="password1">
+      </p>
+      <p>
+        <label for="password2" style="color:white">确　认　密　码：</label>
+        <input type="password" name="password2" id="password2">
+      </p>
+      <p>
+        <label for="select" style="color:white">找 回 密 码 问 题：</label>
+        <select name="question" id="question">
+          <option value="您的出生地">您的出生地</option>
+          <option value="您的小学校名">您的小学校名</option>
+          <option value="您最喜欢的运动">您最喜欢的运动</option>
+          <option value="您某个证件的号码">您某个证件的号码</option>
+          <option value="您喜爱人的爱称">您喜爱人的爱称</option>
+          <option value="您最喜欢去的地方">您最喜欢去的地方</option>
+          <option value="您最讨厌的颜色">您最讨厌的颜色</option>
+          <option value="您最爱看的一本书">您最爱看的一本书</option>
+        </select>
+      </p>
+      <p>
+        <label for="answer" style="color:white">找回密码的答案：</label>
+        <input type="text" name="answer" id="answer">
+      </p>
+      <p>　
+  　<input type="reset" name="reset" id="reset" value="重置">
+  　<input type="submit" name="submit" id="submit" value="提交">
+      </p>
+    </form>
+    </div>
+     <div style="width: auto;border: 0.5px solid whitesmoke; margin-top: 5px;"></div>
+<div class="footer">
+		    <p></p>
+			<p >版权信息</p>
+			<p >Copyright © 2018 Adobe Systems Incorporated. All rights reserved.</p>
+</div> 
+  </body>
+</html>
